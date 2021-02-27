@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostsController
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +32,10 @@ Route::get('/products' , 'App\Http\Controllers\ProductsController@index')->name(
 // Route::get('products/{name}','App\Http\Controllers\ProductsController@show')->where('name','[a-zA-Z]+');
 
 // Multiple pattern 
-Route::get('products/{name}/{id}','App\Http\Controllers\ProductsController@show')->where([
-	'name' => '[a-z]+',
-	'id' => '[0-9]+'
-]);
+// Route::get('products/{name}/{id}','App\Http\Controllers\ProductsController@show')->where([
+// 	'name' => '[a-z]+',
+// 	'id' => '[0-9]+'
+// ]);
 
 
+Route::('/posts', [PostsController::class , 'index']);
