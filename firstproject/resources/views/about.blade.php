@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-	<h2>This content from index</h2>
+	<h2>this is my content from about</h2>
 @endsection;

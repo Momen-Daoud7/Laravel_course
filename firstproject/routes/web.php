@@ -20,7 +20,7 @@ Route::get('/', 'App\Http\Controllers\ProductsController@index');
 // Route::get('/products' , [ProductsController::class , "index"]);
 
 // Laravel 8 (Also New)
-Route::get('/products' , 'App\Http\Controllers\ProductsController@index');
+Route::get('/products' , 'App\Http\Controllers\ProductsController@index')->name('products');
 
 // Routing Params
 // Paatern is integer
