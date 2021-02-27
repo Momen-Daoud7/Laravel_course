@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostsController
+use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,4 +38,4 @@ Route::get('/products' , 'App\Http\Controllers\ProductsController@index')->name(
 // ]);
 
 
-Route::('/posts', [PostsController::class , 'index']);
+Route::get('/posts', [PostsController::class , 'index']);
