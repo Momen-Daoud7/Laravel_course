@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostsController;
+use App\Http\Controllers\CarsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +14,14 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\ProductsController@index');
+// Route::get('/', 'App\Http\Controllers\ProductsController@index');
 
 // Return a controller with routing
 // Laravel 8 (New) 
 // Route::get('/products' , [ProductsController::class , "index"]);
 
 // Laravel 8 (Also New)
-Route::get('/products' , 'App\Http\Controllers\ProductsController@index')->name('products');
+// Route::get('/products' , 'App\Http\Controllers\ProductsController@index')->name('products');
 
 // Routing Params
 // Paatern is integer
@@ -38,4 +38,4 @@ Route::get('/products' , 'App\Http\Controllers\ProductsController@index')->name(
 // ]);
 
 
-Route::get('/posts', [PostsController::class , 'index']);
+Route::resource('/cars' , CarsController::class);

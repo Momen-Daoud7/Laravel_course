@@ -2,18 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Posts;
+use App\Models\Cars;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-
-class PostsFactory extends Factory
+class CarsFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = \App\Models\Posts::class;
+    protected $model = \App\Models\Cars::class;
 
     /**
      * Define the model's default state.
@@ -23,10 +22,7 @@ class PostsFactory extends Factory
     public function definition()
     {
         return [
-            //
-            'title' => $this->faker->title,
-            'body' => $this->faker->paragraph
-         
+        
         ];
     }
 }
